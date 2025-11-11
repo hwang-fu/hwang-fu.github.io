@@ -64,6 +64,14 @@
         text-decoration: underline;
     }
 
+    .nav-icon {
+        width: 18px;          /* adjust size here */
+        height: 18px;
+        object-fit: contain;  /* keep aspect ratio */
+        vertical-align: middle;
+        margin-left: 0.3rem;  /* small gap from text */
+    }
+
     footer {
         margin-top: 2rem;
         font-size: 0.9rem;
@@ -86,7 +94,7 @@
   <main>
     <h2>Things I've written about</h2>
     <ul>
-      <li><a href="/lisp-journey/docs/lisp.html">About Common Lisp</a></li>
+        <li><a href="/lisp-journey/docs/lisp.html">About Common Lisp</a> <img src="logos/common-lisp.png" alt="Common Lisp logo" class="nav-icon"/></li>
       <li><a href="/i-dont-know/RxJS.html">About RxJS</a></li>
       <li><a href="/i-dont-know/angular.html">About Angular</a></li>
       <li><a href="/i-dont-know/postgresql.html">About PostgreSQL</a></li>
