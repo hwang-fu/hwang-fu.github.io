@@ -58,7 +58,7 @@
         text-decoration: underline;
     }
 
-    /* NEW: spin animation definition */
+    /* spin animation definition */
     @keyframes spin {
         from {
             transform: rotate(0deg);
@@ -68,9 +68,24 @@
         }
     }
 
-    /* NEW: when user hovers the list item, spin the icon */
+    @keyframes git-pulse {
+        0% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(0.9);
+        }
+    }
+
     li:hover .nav-icon {
         animation: spin 0.8s linear infinite;
+    }
+
+    li:hover .git-icon {
+        animation: git-pulse 0.8s ease-in-out infinite;
     }
 
     .nav-icon {
@@ -208,7 +223,7 @@
                 <a href="/linux-tools/git.html">
                     <b>Git</b>, Everybody Uses
                 </a>
-                <img src="logos/git.png" alt="Logo GIT" class="nav-icon" />
+                <img src="logos/git.png" alt="Logo GIT" class="nav-icon git-icon" />
             </li>
             <li>
                 <a href="/linux-tools/gdb.html">
